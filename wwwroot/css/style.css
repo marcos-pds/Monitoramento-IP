@@ -1,0 +1,137 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão da aplicação */
+  background-color: #f4f4f4; /* Cor de fundo da página */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+}
+
+/* Estilo do contêiner principal */
+#statusContainer {
+  width: 90%; /* Largura do contêiner */
+  margin: 20px auto; /* Centraliza o contêiner */
+  padding: 20px; /* Espaçamento interno do contêiner */
+  background-color: white; /* Cor de fundo do contêiner */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+}
+
+/* Estilo da tabela */
+.status-table {
+  width: 100%; /* Tabela ocupa toda a largura do contêiner */
+  border-collapse: collapse; /* Remove espaçamentos entre as células */
+}
+
+/* Estilo das células da tabela */
+.status-table th, .status-table td {
+  border: 1px solid #ddd; /* Borda das células */
+  padding: 12px; /* Espaçamento interno das células */
+  text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* Estilo do cabeçalho da tabela */
+.status-table th {
+  background-color: #007BFF; /* Cor de fundo do cabeçalho */
+  color: white; /* Cor do texto do cabeçalho */
+}
+
+/* Estilo das linhas da tabela ao passar o mouse */
+.status-table tr:hover {
+  background-color: #f5f5f5; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para as classes de status */
+.online {
+  color: green; /* Cor verde para status ONLINE */
+}
+
+.offline {
+  color: red; /* Cor vermelha para status OFFLINE */
+}
+
+/* Estilo dos botões */
+button {
+  background-color: #007BFF; /* Cor de fundo dos botões */
+  color: white; /* Cor do texto dos botões */
+  border: none; /* Remove bordas */
+  padding: 10px 15px; /* Espaçamento interno dos botões */
+  border-radius: 5px; /* Cantos arredondados dos botões */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  margin-right: 10px; /* Espaçamento entre os botões */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos do modal */
+#modal {
+  display: none; /* Inicialmente oculto */
+  position: fixed; /* Fica fixo na tela */
+  z-index: 1000; /* Fica acima de outros elementos */
+  left: 0; /* Alinhado à esquerda */
+  top: 0; /* Alinhado ao topo */
+  width: 100%; /* Largura total da tela */
+  height: 100%; /* Altura total da tela */
+  overflow: auto; /* Permite rolagem se necessário */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+/* Estilos do conteúdo do modal */
+.modal-content {
+  background-color: #fefefe; /* Cor de fundo do conteúdo do modal */
+  margin: 15% auto; /* Margem para centralizar verticalmente */
+  padding: 40px; /* Espaçamento interno do conteúdo */
+  border: 1px solid #888; /* Borda do conteúdo */
+  width: 50%; /* Largura do conteúdo */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilo do botão de fechar do modal */
+.close {
+  color: #aaa; /* Cor do texto do botão de fechar */
+  float: right; /* Alinha à direita */
+  font-size: 28px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+}
+
+/* Efeito ao passar o mouse sobre o botão de fechar */
+.close:hover,
+.close:focus {
+  color: black; /* Cor do texto ao passar o mouse */
+  text-decoration: none; /* Remove sublinhado */
+  cursor: pointer; /* Muda o cursor ao passar sobre */
+}
+
+/* Estilos de campos de entrada no modal */
+input[type="text"], input[type="number"] {
+  width: 100%; /* Largura total do campo */
+  padding: 10px; /* Espaçamento interno do campo */
+  margin: 8px 0; /* Margem vertical */
+  border: 1px solid #ccc; /* Borda do campo */
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilo para botões do modal */
+
+.fixed-button {
+  position: fixed; /* Fixa o botão em uma posição relativa à janela de visualização */
+  bottom: 20px; /* Distância da parte inferior da tela */
+  right: 20px; /* Distância da lateral direita da tela */
+  width: 50px; /* Largura do botão */
+  height: 50px; /* Altura do botão */
+  background-color: #007BFF; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  border-radius: 50%; /* Torna o botão redondo */
+  font-size: 24px; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.fixed-button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse sobre o botão */
+}

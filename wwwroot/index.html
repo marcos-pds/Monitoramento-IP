@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Ping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="statusContainer">
+        <h1>Status da Rede</h1>
+        
+        <div id="filterButtons">
+            <button id="showOnline" class="filter-button">Mostrar IPs Online</button>
+            <button id="showOffline" class="filter-button">Mostrar IPs Offline</button>
+            <button id="showAll" class="filter-button">Mostrar Todos</button>
+        </div>
+    
+        <!-- Aqui ficará a tabela -->
+        <table class="status-table">
+            <thead>
+                <tr>
+                    <th>LOJA</th>
+                    <th>CIRCUITO</th>
+                    <th>IP</th>
+                    <th>LATÊNCIA</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ainda näo fuciona e n sei quando vai</h2>
+            <label for="loja">Loja:</label>
+            <input type="text" id="loja" required>
+            
+            <label for="circuito">Circuito:</label>
+            <input type="text" id="circuito" required>
+            
+            <label for="ip">IP:</label>
+            <input type="text" id="ip" required>
+            
+            <label for="latencia">Latência:</label>
+            <input type="text" id="latencia" required>
+    
+            <button id="addIpButton">Adicionar IP</button>
+        </div>
+    </div>
+    
+    <button id="addIpModalButton" class="fixed-button">+</button>
+    
+    <script src="js/Script.js"></script>
+</body>
+</html>
